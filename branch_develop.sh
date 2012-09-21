@@ -40,6 +40,8 @@ git branch -d new1
 #删除服务器分支
 git push origin :new1
 
-
 #合并2个分支
 git merge issue65-user-ots origin/issue62-updateUser-ots
+
+#pull request
+#选择项目后，在网页中选择Pull Request项目,请求别人来合并自己的代码即可
