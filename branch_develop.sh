@@ -4,6 +4,8 @@ git branch -a
 
 #切换到master
 git checkout master
+#切换到branch new1
+git checkout new1
 
 #fetch最新代码
 git fetch origin master
