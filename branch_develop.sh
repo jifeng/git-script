@@ -25,7 +25,7 @@ git push origin new1
 #切换到主干master
 git checkout master
 
-#将主干master-new1合并
+#将主干master-new1合并(在master下运行该指令)
 git merge master new1
 
 #将变更提交到主干master
@@ -36,8 +36,7 @@ git checkout master
 
 
 #删除分支
-#git branch -d new1
-
+git branch -d new1
 #删除服务器分支
 git push origin :new1
 
