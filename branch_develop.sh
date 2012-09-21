@@ -9,8 +9,8 @@ git checkout master
 git fetch origin master
 
 #显示分支列表，包括远程。
-$ git branch -a
-$ git fetch -p origin
+git branch -a
+git fetch -p origin
 
 #####################
 
