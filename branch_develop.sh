@@ -1,4 +1,3 @@
-
 #显示存在的所有分支
 git branch -a
 
@@ -19,8 +18,19 @@ git fetch -p origin
 #创建分支new1
 git branch new1
 
-#提交修改内容到分支new1
+#从master中获取新的代码
+git pull origin master
+
+#修改代码，后提交.这里add不仅使用于新增的文件，对于第二次修改的文件，也需要这样写
+git add *.js
+git commit
+
+#直接提交变更的代码
+git commit -a
+
+#提交修改内容到分支new1,服务器地址要指定，不然它会往master和各个分支中提交一遍
 git push origin new1
+
 
 #切换到主干master
 git checkout master
@@ -31,13 +41,14 @@ git merge master new1
 #将变更提交到主干master
 git push origin master
 
+
 #切换到主干master
 git checkout master
 
 
 #删除分支
 git branch -d new1
-#删除服务器分支
+#删除服务器分支，origin的含义是因为服务器可以有多个
 git push origin :new1
 
 #合并2个分支
