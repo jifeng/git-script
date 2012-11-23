@@ -1,12 +1,18 @@
-在自己开发的分支git rebase master
+确保本地master上已经是最新的代码
+    git checkout master
+    git pull origin master
 
-然后有冲突的话会停下来 解决完冲突之后 git add (编辑的文件)
 
-然后 git rebase --continue
+在自己开发的分支
+    git rebase master
 
-最后生成了一个新的分支， git rebase操作完成之后
+然后有冲突的话会停下来 解决完冲突之后,both modified 部分
+    git add (编辑的文件)
 
-git checkout -b feature-rebase 
-新建一个分支， 之前那个旧的开发的分支就可以删除了
+然后
+    git rebase --continue
 
-feature-rebase  
+如果已经发起pull request，可以先删除之前的分支，再重新发一次
+
+    git push origin :older_branch
+    git push origin older_branch
